@@ -1,0 +1,4 @@
+flaskenv
+.DS_Store
+flask_session
+tf.sh

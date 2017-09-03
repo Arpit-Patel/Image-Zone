@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Arpit Patel">
+    <link rel="icon" href="../static/images/imagezone.png">
+
+    <title>Image Zone</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/css/full.css" rel="stylesheet">
+
+    <!-- URL Cache Bust
+    <link rel="stylesheet" href="/static/css/reset.css?q=1280549780"
+   type="text/css" media="screen" charset="utf-8">-->
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+    <!-- Background JS -->
+    <script src="../static/js/spiders.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Image Zone
+                    <!--<img src="../static/images/imagezone.png" width="120" height="120" class="d-inline-block align-top" alt="">-->
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#">Sign In</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+
+    <br>
+
+    <div class="container">
+
+      <div style="max-width: 650px; margin: auto;" class="well well-sm">
+        <p class="lead">Success: Please click the button to download images.</p>
+        <br>
+        <form id="download" action="/scrape" method="get">
+            <input class="btn btn-primary btn-file" type="submit" value="Download Zip" onclick="thanks()"/>
+        </form>
+        <!--<a href="/getFile/" target="blank"><button class="btn btn-primary btn-file">Download Zip</button></a> -->
+      </div>
+
+    </div>
+
+    <script>
+        function thanks() {
+            setTimeout(function () {
+            window.history.go(-1);
+            }, 1000);
+        }
+    </script>
+
+    <i>
+        <canvas id="spiders" class="hidden-xs"></canvas>
+    </i>
+
+    <!-- Custom JavaScript -->
+
+</body>
+
+</html>

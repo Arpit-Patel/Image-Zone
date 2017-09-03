@@ -1,0 +1,83 @@
+body {
+  margin-top:50px;
+  background-color:transparent;
+}
+
+i {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display:block;
+  z-index:-1;
+}
+
+canvas#spiders {
+  height:100vh;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
+
+div#loading {
+  display : block;
+  position : fixed;
+  z-index: 100;
+  background-image : url('https://static.ezgif.com/images/bg-transparent.gif');
+  background-repeat : no-repeat;
+  background-position : center;
+  left : 0;
+  bottom : 0;
+  right : 0;
+  top : 0;
+}
+
+#img-prev{
+  width: 630px;
+  height: 440px;
+}
+
+#submit-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 670px;
+  margin-top: -310px;
+  margin-left: -500px;
+}
+
+.full {
+  background:rgba(255, 255, 255, 1);
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+  -o-background-size:cover;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background-color:black !important;
+  border-color:black !important;
+}
+
+.btn {
+  background-color:black !important;
+  border-color:black !important;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  display: flex;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  width:100%;
+  vertical-align:middle;
+  text-align:center;
+}
